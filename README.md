@@ -7,23 +7,23 @@ Think about your array of values and for some reason after doing a bunch of oper
 
 If we make use of the identity function `(x) => x` we can easily filter out `null` and `undefined` like this
 ```JavaScript
-[1, 2, null, 3, undefined].filter((x) => x)
+[1, 2, null, 3, undefined].filter((x) => x);
 // => [1, 2, 3]
 ```
 
 Problem is that this might causes unexpected behaviors because of falsiness of for instance the number `0` or the empty string `""`
 
 ```JavaScript
-[0, 1, 2, null, 3, 4, NaN].filter((x) => x)
+[0, 1, 2, null, 3, 4, NaN].filter((x) => x);
 // => [1, 2, 3, 4] // where did 0 go?
 
-["foo", null, "bar", "", undefined, "baz"].filter((x) => x)
+["foo", null, "bar", "", undefined, "baz"].filter((x) => x);
 // => ["foo", "bar", "baz"] // where did "" go?
 ```
 
 The safe way to do it is to create a more specific function that does not rely on the nature of truthy/falsy values e.g.
 ```JavaScript
-[0, 1, 2, 3, null, undefined].filter(x => ![null, undefined].includes(x))
+[0, 1, 2, 3, null, undefined].filter(x => ![null, undefined].includes(x));
 ```
 
 ---
