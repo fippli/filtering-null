@@ -29,6 +29,11 @@ Problem is that this might causes unexpected behaviors because of falsiness of f
 // => ["foo", "bar", "baz"] // where did "" go?
 ```
 
+The safe way to do it is to create a more specific function that does not rely on the nature of truthy/falsy values e.g.
+```JavaScript
+[0, 1, 2, 3, null, undefined].filter(x => ![null, undefined].includes(x))
+```
+
 ---
 
 _Read more about what [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) is in JavaScript._
