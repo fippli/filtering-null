@@ -15,11 +15,12 @@ Problem is that this might causes unexpected behaviors because of falsiness of f
 
 ```JavaScript
 [0, 1, 2, null, 3, 4, NaN].filter((x) => x);
-// => [1, 2, 3, 4] // where did 0 go?
+// => [1, 2, 3, 4]
 
 ["foo", null, "bar", "", undefined, "baz"].filter((x) => x);
-// => ["foo", "bar", "baz"] // where did "" go?
+// => ["foo", "bar", "baz"]
 ```
+Where did `0` go and should `NaN` be there or not?
 
 The safe way to do it is to create a more specific function that does not rely on the nature of truthy/falsy values e.g.
 ```JavaScript
