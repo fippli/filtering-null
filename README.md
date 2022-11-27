@@ -23,7 +23,7 @@ Problem is that this might causes unexpected behaviors because of falsiness of f
 
 The safe way to do it is to create a more specific function that does not rely on the nature of truthy/falsy values e.g.
 ```JavaScript
-[0, 1, 2, 3, null, undefined].filter(x => ![null, undefined].includes(x));
+[0, 1, 2, 3, null, undefined].filter((x) => ![null, undefined].includes(x));
 ```
 
 ---
