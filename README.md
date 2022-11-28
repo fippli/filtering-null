@@ -43,4 +43,13 @@ const isDefined = (x) => [null, undefined].includes(x);
 
 ---
 
-_Read more about what [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) is in JavaScript._
+- [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+- [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+
+- [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)
+- [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+
+- [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+- [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
