@@ -33,6 +33,8 @@ A safe way to do this is to create a more specific function that does not care i
 [0, 1, 2, 3, null, undefined].filter((x) => ![null, undefined].includes(x));
 ```
 
+## Continuation
+
 I prefer naming this function `isDefined` that returns `true` if the input is not `null` or `undefined`, otherwise `false`
 
 ```JavaScript
@@ -40,3 +42,12 @@ const isDefined = (x) => ![null, undefined].includes(x);
 
 [0, 1, 2, 3, null, undefined].filter(isDefined);
 ```
+
+A more generic approach would be to define a function `notIn` that is curried and takes an array of values not supported like:
+```JavaScript
+const notIn = (compare) => (x) => !compare.includes(x);
+
+[1, 2, 3, 4, 5, 6, 7].filter(notIn([2, 4, 6]));
+// => [ 1, 3, 5, 7 ]
+```
+
