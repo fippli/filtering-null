@@ -1,7 +1,7 @@
 # A convenient(?) way of filtering null values
 Think about your array of values, and for some reason after doing a bunch of operations, you end up with an array containing _[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)_ and _[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)_. 
 
-It could for example be if you have an optional field and _[map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map))_ a function over that value. 
+It could for example be if you have an optional field and _[map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)_ a function over that value. 
 
 Here is an example:
 ```JavaScript
