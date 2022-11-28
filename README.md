@@ -52,6 +52,6 @@ const notIn = (compare) => (x) => !compare.includes(x);
 ```
 
 So another way of creating `isDefined` would be
-```
-const isDefined = notIn([null, undefined])
+```JavaScript
+const isDefined = notIn([null, undefined]);
 ```
