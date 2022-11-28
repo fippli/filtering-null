@@ -1,5 +1,5 @@
 # A convenient(?) way of filtering null values
-Think about your array of values, and for some reason after doing a bunch of operations, you end up with an array containing `null` and `undefined`. 
+Think about your array of values, and for some reason after doing a bunch of operations, you end up with an array containing `[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)` and `undefined`. 
 
 It could for example be if you have an optional field and map a function over that value. 
 
