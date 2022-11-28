@@ -33,7 +33,7 @@ A safe way to do this is to create a more specific function that does not rely o
 [0, 1, 2, 3, null, undefined].filter((x) => ![null, undefined].includes(x));
 ```
 
-I prefer naming this function `isDefined` that returns `true` if the input is not `null` or `undefined`, otherwies `false`
+I prefer naming this function `isDefined` that returns `true` if the input is not `null` or `undefined`, otherwise `false`
 
 ```JavaScript
 const isDefined = (x) => [null, undefined].includes(x);
